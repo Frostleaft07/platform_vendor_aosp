@@ -80,7 +80,6 @@ PRODUCT_PACKAGES += \
     librs_jni \
     Stk \
     AEXPapers \
-    DuckDuckGo \
     MusicPlayerGO \
     Recorder \
     ExactCalculator \
@@ -214,12 +213,6 @@ USE_DEX2OAT_DEBUG := false
 
 # Enable ccache
 USE_CCACHE := true
-
-# GoogleCameraGo
-ifneq ($(TARGET_SHIP_GCAM_GO),false)
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
-endif
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
